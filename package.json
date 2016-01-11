@@ -1,0 +1,33 @@
+{
+  "name": "64bitint",
+  "version": "1.0.0",
+  "description": "A node module that supports working with 64 bit integers in a stream.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gittygitgit/64BitInt.git"
+  },
+  "keywords": [
+    "nodejs",
+    "64bit",
+    "stream",
+    "buffer"
+  ],
+  "author": "mgrudkowski@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gittygitgit/64BitInt/issues"
+  },
+  "homepage": "https://github.com/gittygitgit/64BitInt#readme",
+  "dependencies": {
+    "bignumber": "^1.1.0",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
