@@ -12,6 +12,11 @@ function readUInt64BE(buf, offset) {
    return new BigNumber(word1).plus(new BigNumber(word0).times(0x100000000));
 }
 
+function readInt64BE(buf, offset) {
+   var word0 = buf.readInt32BE(offset);
+   var word1 = buf.readUInt32BE(offset+4);
+   return new BigNumber(word1).plus(new BigNumber(word0).times(0x100000000));
+}
 
 function readString(buf, offset) {
     var length = buf.readInt16LE(offset);
@@ -25,6 +30,7 @@ function readStringOfLength(buf, offset, length) {
 module.exports= {
   readUInt64:readUInt64,
   readUInt64BE:readUInt64BE,
+  readInt64BE:readInt64BE,
   readString:readString,
   readStringOfLength:readStringOfLength
 }
