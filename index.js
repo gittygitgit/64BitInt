@@ -1,3 +1,3 @@
-var foo = require("app/functions.js")
+var foo = require("./app/functions.js")
 
-module.exports = foo.exports;
+module.exports = foo;
