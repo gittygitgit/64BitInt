@@ -8,7 +8,6 @@ describe("Binary functions", function() {
       var buf = new Buffer(100);
       buf.writeUInt32BE(1, 0);
       buf.writeUInt32BE(0, 4);
-
       var long = f.readUInt64BE(buf, 0);
       expect(long.toString()).to.equal("4294967296");
     });
