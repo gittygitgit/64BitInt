@@ -1,6 +1,6 @@
 {
   "name": "64bigint",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A node module that supports working with 64 bit integers in a stream.",
   "main": "index.js",
   "directories": {
