@@ -1,4 +1,4 @@
-var BigNumber = require('bignumber.js')
+var BigNumber = require('bignumber')
 
 function readUInt64(buf, offset) {
    var word0 = buf.readUInt32LE(offset);
